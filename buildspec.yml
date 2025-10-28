@@ -22,7 +22,7 @@ phases:
       - docker push ${ECR_IMAGE_URI}
 
       # Generate image definitions file for ECS
-      - printf '[{"name":"angular-app","imageUri":"%s"}]' ${ECR_IMAGE_URI} > imagedefinitions.json
+      - printf '[{"name":"my-angular-app","imageUri":"%s"}]' ${ECR_IMAGE_URI} > imagedefinitions.json
 
 artifacts:
   files:
